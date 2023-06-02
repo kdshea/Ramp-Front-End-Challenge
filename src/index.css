@@ -151,7 +151,11 @@ hr.RampBreak--l {
 }
 
 .RampInputCheckbox--input {
-  display: none;
+  /* 
+  Bug 2: Approve checkbox not working
+  display: none; */
+  opacity: 0;
+  transform: translate(-16px, 0);
 }
 
 .RampButton {
