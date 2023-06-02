@@ -35,7 +35,8 @@ export const getTransactionsPaginated = ({
 
   return {
     nextPage,
-    data: data.transactions.slice(start, end),
+    // Bug 4: Clicking on View More button not showing correct data
+    data: data.transactions.slice(0, end),
   }
 }
 
